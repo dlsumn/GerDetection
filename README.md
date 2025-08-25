@@ -1,6 +1,6 @@
 # GerDetection
 
-## 📌 Introduction
+## Introduction
 This repository contains the official implementation of  
 **"Poverty Mapping in Mongolia with AI-based Ger Detection Reveals Urban Slums Persist After the COVID-19 Pandemic."**
 
