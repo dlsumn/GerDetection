@@ -30,8 +30,7 @@ def set_seed(seed):
     
 set_seed(0)
 
-parser = argparse.ArgumentParser(description='Deeplabv3 pytorch Training')
-parser.add_argument('--city', type=str, help='city')
+parser = argparse.ArgumentParser(description='GerDetection Evaluation')
 parser.add_argument('--model', type=str, help='model path')
 
 args = parser.parse_args()
@@ -77,8 +76,8 @@ valtransform = get_val_augmentation([256, 256])
 normalize = get_normalize()
 
 
-testset = GPSDatasetEVAL(metadata=f"./multiyear/metadata/{args.city}_eval_metadata.csv",
-                      root_dir=f'./unlabeled/{args.city}',
+testset = GPSDatasetEVAL(metadata=f"./multiyear/metadata/MNG_eval_metadata.csv",
+                      root_dir=f'./unlabeled/MNG_Ulaanbaatar',
                       train = False,
                       transform=valtransform,
                       normalize=normalize)

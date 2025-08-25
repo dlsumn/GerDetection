@@ -96,7 +96,7 @@ def update_ema_variables(model, ema_model, alpha, global_step):
 
 set_seed(0)
 
-parser = argparse.ArgumentParser(description='Deeplabv3 pytorch Training')
+parser = argparse.ArgumentParser(description='GerDetection Training')
 parser.add_argument('--lr', default=0.01, type=float, help='learning rate')
 parser.add_argument('--epoch', default=100, type=int, help='training epoch')
 parser.add_argument('--weight', default=0.1, type=float, help='focal loss weight')
