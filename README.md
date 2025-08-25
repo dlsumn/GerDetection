@@ -25,14 +25,21 @@ git clone https://github.com/dlsumn/GerDetection.git
 cd GerDetection
 ```
 
-## Usage
+## Train
 ```bash
 python main.py --epochs 100 --lr 0.01 --weight 0.4
 ```
-### Arguments
+**Arguments**
 - ```--epochs```: number of training epochs
 - ```--weight```: class weight for the non-slum category (used in Focal Loss)
 - ```--lr```: learning rate
+
+## Evaluation
+```bash
+python eval.py --model <path_to_model_checkpoint>
+```
+**Arguments**
+- ```--model```: path to the trained model checkpoint for evaluation
 
 ## Requirements
 - Python >= 3.7
