@@ -1,0 +1,1 @@
+The corresponding satellite images are not uploaded to GitHub due to copyright issues. Upon request via email, we will review the copyright and sharing conditions.
